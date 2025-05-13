@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Line International</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-dark d-none d-lg-block">
+                <div style="position: relative; width: 300px; height: 100px;">
+                    <a href="index.html">
+                        <img src="img/Logo1.png" style="position: absolute; top: 25px; left: 2px; width: 300px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bg-dark d-none d-lg-flex">
+                    <div class="col-lg-7 text-left text-white">
+                        <div class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>newline_ventas@outlook.com</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>+52 56 2209 1404</small>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                    <a href="" class="navbar-brand d-block d-lg-none">
+                        <div style="position: relative; width: 300px; height: 100px;">
+                            <img src="img/Logo2.png" style="position: absolute; top: -3px; left: 2px; width: 150px;">
+                        </div>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Equipos</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="patines.html" class="dropdown-item">Patines</a>
+                                    <a href="apiladores.html" class="dropdown-item">Apiladores</a>
+                                    <a href="monta.html" class="dropdown-item">Montacargas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary mr-3 d-none d-lg-block">Cotiza Aqui</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="display-4 mb-4 mb-md-0 text-secondary text-uppercase">Contacto</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light" href="index.html">Inicio</a>
+                        <i class="fas fa-angle-double-right text-light2 mx-2"></i>
+                        <a class="btn btn-sm btn-outline-light disabled" href="">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+   
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Contactanos</h6>
+                    <h1 class="section-title mb-3">Cotiza aqui tus equipos</h1>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="font-weight-normal text-muted mb-3">Si tienes alguna pregunta acerca de nuestros productos o servicios, por favor rellena el siguiente formulario y en breve nos pondremos en contacto contigo o contáctanos vía telefónica</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="col-sm-6 control-group">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresa tu nombre" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-sm-6 control-group">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Email" required="required" data-validation-required-message="Por favor ingresa tu email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Concepto" required="required" data-validation-required-message="Por favor ingresa concepto" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control p-4" rows="6" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingresa un mensaje"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d332.3594669835791!2d-99.06992259098632!3d19.532243396159224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd47b51c4de5%3A0xd28581d3570c819!2sWALKER%20DE%20MEXICO!5e0!3m2!1ses-419!2smx!4v1747176564678!5m2!1ses-419!2smx"
+                        width="800" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <div class="contact-info-item d-flex align-items-center justify-content-center  text-white py-4 py-lg-0">
+        <a class="btn btn-light2 btn-social2 mr-2" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-light2 btn-social2 mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-light2 btn-social2 mr-2" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-light2 btn-social2 mr-2" href="https://web.whatsapp.com/send?phone=525622091404&text=Hola.%20Estuve%20de%20visita%20en%20su%20sitio%20web"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div style="position: relative; width: 300px; height: 100px;">
+                <img src="img/Logo1.png" style="position: absolute; top: -85px; left: -10px; width: 300px;">
+            
+                <h5 class="font-weight-semi-bold text-primary mb-2">Horario de Atencion:</h5>
+                <p class="mb-1">Lunes – Viernes, 9AM – 6PM</p>
+                <p class="mb-0">Sabado - Domingos: Cerrado</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Contactanos</h4>
+                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>Emiliano Zapata 1 A, Cuauhtemoc Xalostoc, 55310 Ecatepec de Morelos, Méx.</p>
+                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+52 56 2209 1404</p>
+                <p><i class="fa fa-envelope text-primary mr-2"></i>newline_ventas@outlook.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Accesos Rapidos</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                    <a class="text-white mb-2" href="patines.html"><i class="fa fa-angle-right mr-2"></i>Patines</a>
+                    <a class="text-white mb-2" href="apiladores.html"><i class="fa fa-angle-right mr-2"></i>Apiladores</a>
+                    <a class="text-white mb-2" href="monta.html"><i class="fa fa-angle-right mr-2"></i>Montacargas</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Ubicacion New Line International</h4>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d332.3594669835791!2d-99.06992259098632!3d19.532243396159224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd47b51c4de5%3A0xd28581d3570c819!2sWALKER%20DE%20MEXICO!5e0!3m2!1ses-419!2smx!4v1747176564678!5m2!1ses-419!2smx"
+                    width="300" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; <a href="#">New Line International</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
