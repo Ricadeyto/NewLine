@@ -1,20 +1,30 @@
 <?php
-if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  http_response_code(500);
-  exit();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Datos del formulario
+    $nombre = htmlspecialchars($_POST['nombre']);
+    $email = htmlspecialchars($_POST['email']);
+    $asunto = htmlspecialchars($_POST['asunto']);
+    $mensaje = htmlspecialchars($_POST['mensaje']);
+
+    // Correo al que quieres que lleguen los mensajes
+    $destinatario = "tucorreo@dominio.com"; // <-- Reemplaza con tu correo real
+
+    // Construir el contenido del mensaje
+    $contenido = "Nombre: $nombre\n";
+    $contenido .= "Email: $email\n";
+    $contenido .= "Asunto: $asunto\n\n";
+    $contenido .= "Mensaje:\n$mensaje";
+
+    // Cabeceras del correo
+    $cabeceras = "From: $email";
+
+    // Enviar el correo
+    if (mail($destinatario, $asunto, $contenido, $cabeceras)) {
+        echo "Mensaje enviado correctamente.";
+    } else {
+        echo "Error al enviar el mensaje.";
+    }
+} else {
+    echo "Acceso no permitido.";
 }
-
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
-$m_subject = strip_tags(htmlspecialchars($_POST['subject']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-
-$to = "info@example.com"; // Change this email to your //
-$subject = "$m_subject:  $name";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
-$header = "From: $email";
-$header .= "Reply-To: $email";	
-
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
 ?>
