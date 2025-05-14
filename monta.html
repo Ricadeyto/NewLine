@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <title>New Line International</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al CSS externo -->
+  
     <!-- Favicon -->
     <link href="img/Logo.png" rel="icon">
 
@@ -26,14 +28,45 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<script>
+    window.addEventListener('load', function () {
+      if (!sessionStorage.getItem('modalShown')) {
+        document.getElementById('myModal').style.display = 'block';
+        sessionStorage.setItem('modalShown', 'true');
+      }
+    });
+  
+    function cerrarModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+  </script>
+  
+
 <body>
-       <!-- Header Start -->
-       <div class="container-fluid">
+    
+<!-- Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="modal-contenido-flex">
+        <img src="img/oferta.png" alt="Imagen de bienvenida" class="modal-imagen-lado">
+        <div class="modal-texto-lado">
+          <h2>¡Bienvenido aqui te dejamos una oferta especial!</h2>
+          <p>Gracias por visitar nuestra página. Esperamos que disfrutes tu estancia.</p>
+          <a href="#" class="close-btn" onclick="cerrarModal()">Cerrar</a>
+          <a href="contact.html" class="close-btn">¡Lo quiero!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <!-- menu -->
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <div style="position: relative; width: 300px; height: 100px;">
+                <div style="position: relative; width: 100%; height: auto;">
                     <a href="index.html">
-                    <img src="img/Logo1.png" style="position: absolute; top: 25px; left: 2px; width: 300px;">
+                    <img src="img/Logo1.png" style="position: absolute; top: 25px; left: 2px; width: 100%; height: auto;">
                 </a>
                 </div>
             </div>
@@ -52,17 +85,16 @@
                 </div>
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
                     <a href="" class="navbar-brand d-block d-lg-none">
-                        <div style="position: relative; width: 300px; height: 100px;">
-                            <img src="img/Logo2.png" style="position: absolute; top: -3px; left: 2px; width: 150px;">
+                        <div style="position: relative; width: 150px; height: 100px;">
+                            <img src="img/Logo2.png" style="position: absolute; top: 5px; left: 2px; width: 150px;">
                         </div>
                     </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active">Inicio</a>
                             <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Equipos</a>
                                 <div class="dropdown-menu rounded-0 m-0">
@@ -78,6 +110,28 @@
             </div>
         </div>
     </div>
+<header class="solo-movil">
+    
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="nav" class="nav-menu">
+      <a href="index.html">INICIO</a>
+      <a href="about.html">SOBRE NOSOTROS</a>
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EQUIPOS</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="patines.html" class="dropdown-item">PATINES</a>
+                                    <a href="apiladores.html" class="dropdown-item">APILADORES</a>
+                                    <a href="monta.html" class="dropdown-item">MONTACARGAS</a>
+                                </div>
+      <a href="contact.html">CONTACTO</a>
+      <span class="closem" onclick="toggleMenu()">✕</span>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('activo');
+    }
+  </script>
     <!-- Header End -->
 
     <!-- Page Header Start -->

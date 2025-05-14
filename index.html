@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -64,9 +64,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <div style="position: relative; width: 300px; height: 100px;">
+                <div style="position: relative; width: 100%; height: auto;">
                     <a href="index.html">
-                    <img src="img/Logo1.png" style="position: absolute; top: 25px; left: 2px; width: 300px;">
+                    <img src="img/Logo1.png" style="position: absolute; top: 25px; left: 2px; width: 100%; height: auto;">
                 </a>
                 </div>
             </div>
@@ -86,16 +86,15 @@
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
                     <a href="" class="navbar-brand d-block d-lg-none">
                         <div style="position: relative; width: 150px; height: 100px;">
-                            <img src="img/Logo2.png" style="position: absolute; top: -3px; left: 2px; width: 150px;">
+                            <img src="img/Logo2.png" style="position: absolute; top: 5px; left: 2px; width: 150px;">
                         </div>
                     </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active">Inicio</a>
                             <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Equipos</a>
                                 <div class="dropdown-menu rounded-0 m-0">
@@ -111,6 +110,29 @@
             </div>
         </div>
     </div>
+<header class="solo-movil">
+    
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="nav" class="nav-menu">
+      <a href="index.html">INICIO</a>
+      <a href="about.html">SOBRE NOSOTROS</a>
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EQUIPOS</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="patines.html" class="dropdown-item">PATINES</a>
+                                    <a href="apiladores.html" class="dropdown-item">APILADORES</a>
+                                    <a href="monta.html" class="dropdown-item">MONTACARGAS</a>
+                                </div>
+      <a href="contact.html">CONTACTO</a>
+      <span class="closem" onclick="toggleMenu()">✕</span>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('activo');
+    }
+  </script>
+  
     <!-- Fin Menu -->
 
 
