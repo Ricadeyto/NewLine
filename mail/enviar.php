@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
     // Correo al que quieres que lleguen los mensajes
-    $destinatario = "tucorreo@dominio.com"; // <-- Reemplaza con tu correo real
+    $destinatario = "riaz.rzc@gmail.com"; // <-- Reemplaza con tu correo real
 
     // Construir el contenido del mensaje
     $contenido = "Nombre: $nombre\n";
