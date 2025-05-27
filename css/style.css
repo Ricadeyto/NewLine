@@ -10179,8 +10179,17 @@ h6,
 }
 
 .bg-about {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/about.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nosotros.png), no-repeat center center;
   background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .bg-about {
+    background-position: center top;
+    min-height: 200px; /* Puedes ajustar este valor según lo necesites */
+    position: relative;
+  }
 }
 
 
