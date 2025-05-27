@@ -9974,6 +9974,33 @@ h6,
   z-index: 11;
 }
 
+
+.btn-ver-oferta {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1100;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn-ver-oferta i {
+  font-size: 24px;
+}
+.btn-ver-oferta:hover {
+  background-color: #e0a800;
+}
+
+
+
 .section-title {
   position: relative;
   padding-left: 60px;

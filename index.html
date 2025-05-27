@@ -26,6 +26,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+   
 </head>
 
 <script>
@@ -39,6 +41,11 @@
     function cerrarModal() {
       document.getElementById('myModal').style.display = 'none';
     }
+
+     function abrirModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+
   </script>
   
 
@@ -426,6 +433,33 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<button onclick="abrirModal()" class="btn-ver-oferta" aria-label="Ver oferta especial">
+  <i class="fas fa-tags"></i>
+</button>
+
+
+<script>
+  const botonOferta = document.querySelector('.btn-ver-oferta');
+  let scrollTimeout;
+
+  function mostrarBoton() {
+    botonOferta.style.display = 'block';
+
+    // Reinicia el temporizador
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      botonOferta.style.display = 'none';
+    }, 5000); // 5000 ms = 5 segundos sin movimiento
+  }
+
+  // Mostrar botón cuando el usuario hace scroll
+  window.addEventListener('scroll', mostrarBoton);
+</script>
+
+    
+   
 
 
     <!-- JavaScript Libraries -->
